@@ -50,14 +50,14 @@ export function InfoCard(props) {
           {/* 两个社交按钮 */}
           {url1 && (
             <div className='w-10 text-center bg-indigo-400 p-2 rounded-full  transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
-              <Link href={url1}>
+              <Link aria-label={"Link 1"} href={url1}>
                 <i className={icon1} />
               </Link>
             </div>
           )}
           {url2 && (
             <div className='bg-indigo-400 p-2 rounded-full w-10 items-center flex justify-center transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
-              <Link href={url2}>
+              <Link aria-label={"Link 2"} href={url2}>
                 <i className={icon2} />
               </Link>
             </div>
