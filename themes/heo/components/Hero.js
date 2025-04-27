@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useImperativeHandle, useRef, useState } from 'react'
 import CONFIG from '../config'
+import Image from "next/image";
 
 /**
  * 顶部英雄区
@@ -395,8 +396,10 @@ function TodayCard({ cRef, siteInfo }) {
 
         {/* 封面图 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={siteInfo?.pageCover}
+          width={600}
+          height={600}
           id='today-card-cover'
           className={`${
             isCoverUp ? '' : ' pointer-events-none'
