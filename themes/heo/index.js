@@ -313,15 +313,15 @@ const LayoutSlug = props => {
                 <WWAds orientation='horizontal' className='w-full' />
               </section>
 
+              <ShareBar post={post} />
+              
               {/* 上一篇\下一篇文章 */}
               <PostAdjacent {...props} />
 
-              {/* 分享 */}
-              <ShareBar post={post} />
               {post?.type === 'Post' && (
                 <div className='px-5'>
                   {/* 版权 */}
-                  <PostCopyright {...props} />
+                  {/*<PostCopyright {...props} />*/}
                   {/* 文章推荐 */}
                   <PostRecommend {...props} />
                 </div>
