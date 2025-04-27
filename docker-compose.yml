@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NOTION_PAGE_ID: 1dce46586c1e80578a4ceea3fe0fb354
+        NEXT_PUBLIC_THEME: heo
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NOTION_PAGE_ID=1dce46586c1e80578a4ceea3fe0fb354
+      - NEXT_PUBLIC_THEME=heo
+    restart: unless-stopped
