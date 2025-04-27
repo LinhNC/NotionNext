@@ -109,7 +109,7 @@ export default function PostHeader({ post, siteInfo, isDarkMode }) {
                   readTime={post.readTime}
                 />
               </div>
-              {post?.type !== 'Page' && (
+             {/* {post?.type !== 'Page' && (
                 <>
                   <Link
                     href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
@@ -119,7 +119,7 @@ export default function PostHeader({ post, siteInfo, isDarkMode }) {
                     {post?.publishDay}
                   </Link>
                 </>
-              )}
+              )}*/}
 
               <div className='pl-1 mr-2'>
                 <i className='fa-regular fa-calendar-check'></i>{' '}
