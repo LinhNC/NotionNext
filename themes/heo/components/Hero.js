@@ -396,10 +396,8 @@ function TodayCard({ cRef, siteInfo }) {
 
         {/* 封面图 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <Image alt={"Hero Today Card"}
+        <img alt={"Hero Today Card"}
           src={siteInfo?.pageCover}
-          width={600}
-          height={600}
           id='today-card-cover'
           className={`${
             isCoverUp ? '' : ' pointer-events-none'
